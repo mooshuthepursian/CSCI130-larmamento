@@ -29,3 +29,5 @@ clean:
 
 # FIXME
 # Add a rule to run the program
+run:
+	./$(PROGRAM)
