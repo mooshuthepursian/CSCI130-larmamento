@@ -14,7 +14,7 @@ int main()
 {
     string fName, lName;
 
-    cout << "What is your name?";
+    cout << "What is your first and last name?";
 
     cin >> fName >> lName;
     getline(cin, fName);
