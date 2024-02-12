@@ -64,8 +64,8 @@
 | Due Date | 10-Jan-20 |
 | Status | complete |
 | Location | https://github.com/mooshuthepursian/CSCI130-larmamento/blob/main/labs/L1/main.cpp |
-| Self Grade | 100/100 |
-| Notes | typed the given code stub; fixed all the fixmes; learned about stdio |
+| Self Grade | 95/100 |
+| Notes | typed the given code stub; fixed all the fixmes; learned about stdio; could not figure out how to code the rabbits toes |
 
 
 ## References
