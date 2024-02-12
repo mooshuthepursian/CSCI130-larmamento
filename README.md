@@ -28,7 +28,7 @@
 
 ### Assignment #1
 
-| Name | Value |
+| Name | HW1 |
 | :--- | :--- |
 | Name | StdIO |
 | Description | Hangman game using basic input output |
