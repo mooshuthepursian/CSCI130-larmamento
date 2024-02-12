@@ -35,15 +35,15 @@ int main()
     string line2 = " / @  @ \\ *       ASCII Lab     *  (='.'=)\n";
     cout << line2;
     cout << "( > 0 < )   *   By: <Leanza>     *  ("")_("")"<< endl;
-    
- 
-    //FIXME7: print the third of the graphics
-    //FIXME8: use variable to print the fourth line
-    //FIXME9: use variable to print the fifth line
-    //Note: You can add more lines or print more ASCII arts of your choice if you'd like...
-
+    string line3 = "  >>x<<   *       CSCI 111      * \n";
+    cout << line3;
+    string line4 = " /  O \\   **********************\n";
+    cout << line4;
+  
     cout << "\nGood bye.. hit enter to exit the program: " << '\n';
-    //FIXME10: make the console wait for user input 
+        cin.get();
+        cin.ignore (1000, '\n');
+        getchar();
 
     return 0; //exit program by returning 0 status to the system
 }
