@@ -19,8 +19,7 @@ int main()
     cin >> fName >> lName;
     getline(cin, fName);
 
-    cout << "Welcome" << fName
-        << " to the hangman game." << endl;
+    cout << "Welcome Mr/Mrs " << lName << " to the hangman game." << endl;
     cout << "Stage 1" << endl;
         cout << "______" << endl;
         cout << "|     "<< endl;
