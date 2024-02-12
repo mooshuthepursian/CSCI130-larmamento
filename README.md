@@ -5,10 +5,10 @@
 | Name | Value |
 |:---|:---|
 | **Course** | CSCI111 - CS1: Foundations of Computer Science |
-| **Section** | 3 |
-| **Semester** | Fall 2020 |
-| **Student** | A Student |
-| **Mav Username**            | astudent |
+| **Section** | 001 |
+| **Semester** | Spring 2024 |
+| **Student** | Leanza |
+| **Mav Username**            | larmamento |
 | **GitHub Username**         | gituser123 |
 | **Repository**          | https://github.com/rambasnet/csci000-astudent |
 
@@ -30,13 +30,13 @@
 
 | Name | Value |
 | :--- | :--- |
-| Name | Hello World |
-| Description | A basic hello world program |
-| Due Date | 1-Jan-20 |
+| Name | StdIO |
+| Description | Hangman game using basic input output |
+| Due Date | 12-Feb-24 |
 | Status | Done |
-| Location | https://github.com/rambasnet/csci000-astudent/tree/master/python/hello |
+| Location | https://github.com/mooshuthepursian/CSCI130-larmamento/blob/main/assignments/HW1/main.cpp |
 | Self Grade | 100/100 |
-| Notes | completed all the requirements and tested program many times; solution accepted by kattis; screenshot found in the same location |
+| Notes | completed all the requirements and tested program many times |
 
 
 
