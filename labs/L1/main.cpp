@@ -2,8 +2,8 @@
     StdIO Lab
     ASCII Art - using literals and variables
     
-    Updated BY: <Leanza Armamento> #FIXME1
-    Date: ... #FIXME2
+    Updated BY: <Leanza Armamento> 
+    Date: 11-Feb-24
     
     This program produces an ASCII art on the console.
     
@@ -20,12 +20,13 @@ using namespace std; //resolve cout, cin, and endl names
 //main entry point of the program
 int main()
 {
-    //FIXME3: declare a variable to store name
-    //FIXME4: prompt user to enter their name and store the value in variable 
-    cin.ignore('\n'); 
+    string fName, lName;
 
-    //FIXME5; greet the name using the variable as the following output 
-    //must output: Nice to meet you, <name>!
+    cout << "What is your first and last name?";
+
+    cin >> fName >> lName;
+  
+    cout << "Nice to meet you " << fName << " " << lName << endl;!
 
     cout << "Hope you like my Tom & Jerry ASCII art...\n\n";
 
