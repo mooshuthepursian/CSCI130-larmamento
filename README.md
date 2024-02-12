@@ -63,7 +63,7 @@
 | Description | Lab covering standard input and output |
 | Due Date | 10-Jan-20 |
 | Status | complete |
-| Location | https://github.com/rambasnet/csci000-astudent/tree/master/labs/cpp/stdio |
+| Location | https://github.com/mooshuthepursian/CSCI130-larmamento/blob/main/labs/L1/main.cpp |
 | Self Grade | 100/100 |
 | Notes | typed the given code stub; fixed all the fixmes; learned about stdio |
 
