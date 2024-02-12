@@ -9,7 +9,7 @@
 | **Semester** | Spring 2024 |
 | **Student** | Leanza |
 | **Mav Username**            | larmamento |
-| **GitHub Username**         | gituser123 |
+| **GitHub Username**         | mooshuthepursian |
 | **Repository**          | https://github.com/rambasnet/csci000-astudent |
 
 ## Assignments
