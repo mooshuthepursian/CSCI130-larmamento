@@ -26,14 +26,17 @@ int main()
 
     cin >> fName >> lName;
   
-    cout << "Nice to meet you " << fName << " " << lName << endl;!
+    cout << "Nice to meet you " << fName << " " << lName << endl;
 
     cout << "Hope you like my Tom & Jerry ASCII art...\n\n";
 
     string line1 = "  |\\_/|   **********************    (\\_/)\n";
     cout << line1;
-
-    //FIXME6: use variable to print the second line line of the graphic 
+    string line2 = " / @  @ \\ *       ASCII Lab     *  (='.'=)\n";
+    cout << line2;
+    cout << "( > 0 < )   *   By: <Leanza>     *  ("")_("")"<< endl;
+    
+ 
     //FIXME7: print the third of the graphics
     //FIXME8: use variable to print the fourth line
     //FIXME9: use variable to print the fifth line
