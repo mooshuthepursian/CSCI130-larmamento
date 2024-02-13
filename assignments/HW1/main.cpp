@@ -20,13 +20,15 @@ int main()
     getline(cin, fName);
 
     cout << "Welcome Mr/Mrs " << lName << " to the hangman game." << endl;
-    cout << "Stage 1" << endl;
-        cout << "______" << endl;
-        cout << "|     "<< endl;
-        cout << "|     "<< endl;
-        cout << "|     "<< endl;
-        cout << "|     "<< endl; 
-        cout << "------ "<< endl; 
+    
+    cout << "\nType the word 'enter' in order to see the 7 stages of hangman: "<< '\n';
+
+        cin.get();
+    
+    
+    string line1 = "Stage 1\n         ______\n         |\n         |\n         |\n         |\n         ------\n";
+    cout << line1; 
+
     cout << "Stage 2" << endl;
         cout << "______" << endl;
         cout << "|  0  " << endl;
