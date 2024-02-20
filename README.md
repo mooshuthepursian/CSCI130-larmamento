@@ -42,17 +42,41 @@
 
 ## Labs
 
-### Lab #2
+### Lab #4
 
 | Name | Value |
 | :--- | :--- |
-| Name | 2 - Functions and Unittest Lab |
+| Name | 4 - Functions and Unittest Lab |
 | Description | Lab covering standard input and output |
 | Due Date | 10-Jan-20 |
 | Status | complete |
 | Location | https://github.com/rambasnet/csci000-astudent/tree/master/labs/cpp/stdio |
 | Self Grade | 100/100 |
 | Notes | typed the given code stub; fixed all the fixmes; learned about stdio |
+
+### Lab #3
+
+| Name | Value |
+| :--- | :--- |
+| Name | 3 - Functions and Unittest Lab |
+| Description | Lab covering standard input and output |
+| Due Date | 10-Jan-20 |
+| Status | complete |
+| Location | https://github.com/rambasnet/csci000-astudent/tree/master/labs/cpp/stdio |
+| Self Grade | 100/100 |
+| Notes | typed the given code stub; fixed all the fixmes; learned about stdio |
+
+### Lab #2
+
+| Name | Value |
+| :--- | :--- |
+| Name | 2 - Circle Lab |
+| Description | Lab covering calculating area and circumference of a circle using user prompted radius |
+| Due Date | 19-Feb-24 |
+| Status | complete |
+| Location | https://github.com/mooshuthepursian/CSCI130-larmamento/blob/main/labs/L2/circle.cpp |
+| Self Grade | 100/100 |
+| Notes | typed the given code stub; fixed all the fixmes |
 
 
 ### Lab #1
