@@ -34,7 +34,7 @@ int main()
     cout << line1;
     string line2 = " / @  @ \\ *       ASCII Lab     *  (='.'=)\n";
     cout << line2;
-    cout << "( > 0 < )   *   By: <Leanza>     *  ("")_("")"<< endl;
+    cout << "( > 0 < )   *   By: <Leanza>     *  (\")_(\")"<< endl;
     string line3 = "  >>x<<   *       CSCI 111      * \n";
     cout << line3;
     string line4 = " /  O \\   **********************\n";
