@@ -7,8 +7,13 @@ conditionals
 
 using namespace std;
 
-// int main()
-//{
+
+// bool isEvenandNegative(int);
+// void addNums();
+// void subNums();
+int& checkNumber(int&. const int&);
+ int main()
+{
     // cout << boolalpha << (42 == 42) << endl;
     // cout << boolalpha << (42 != 41) << endl;
     // cout << boolalpha << (42 > 42) << endl;
@@ -80,14 +85,64 @@ using namespace std;
     // }
 
 //     cout << "After if" << endl;
-//     return 0; 
-// }
+     return 0; 
+ }
 
+void tests()
+{
+    assert(checkNumber(42, 15) == 1);
+    assert(checkNumber(15, 42) == -1);
+    assert(checkNumber(42, 42) == 0);
+    assert(checkNumber(-32, -7) == -1);
+    cout << "All test cases passed" << endl;
+}
 //bool isEvenandNegative(int num1)
 // void addNums()
 // void subNums()
+int checkNumber(int, int);
 
 int main()
+{
+    int num1, num2;
+    int result;
+
+    cout << "Please enter two numbers seperated by a space: ";
+    cin >> num1 >> num2;
+
+    result = checkNumber (num1, num2);
+
+    if (result == 1) 
+    {
+        cout << "num1 > num2" << endl;
+    }
+
+    else if (result == -1)
+    {
+        cout << "num1 < num2" << endl;
+    }
+
+    else
+    {
+        cout << "num1 == num2" << endl;
+    }
+    //check if n1 > n2, return 1
+    //check if n1 < n2, return -1
+    //check if they are equal return 0
+    if(n1 > n2)
+    {
+        return 1
+    }
+
+    if(n1 < n2)
+    {
+        return -1
+    }
+    
+    if(n1 == n2)
+    {
+        return 0
+    }
+}
 {
     // long selection;
     // cout << "[1]: Add Numbers" << endl;
