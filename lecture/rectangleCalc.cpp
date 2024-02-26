@@ -69,7 +69,7 @@ string promptName();
     string inputName;
 
     cout << "Please enter your name: ";
-    getline(sin, inputName);
+    getline(cin, inputName);
     return inputName;
 }
 //  Display welcome prompt with name
