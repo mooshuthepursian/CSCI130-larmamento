@@ -24,6 +24,8 @@ int main()
 
     getThings (pType, money, distance, mood);
 
+    
+
     greetName(promptName());
 
     //protein type: [meat/veggies/fish]
