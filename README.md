@@ -18,13 +18,13 @@
 
 | Name | Value |
 | :--- | :--- |
-| Name | Egypt |
-| Description | [egypt problem on Kattis](https://open.kattis.com/problems/egypt) |
-| Due Date | 1-Feb-2020 |
+| Name | Triangle |
+| Description | Finding the area and perimeter of a triangle using the user input sides and height |
+| Due Date | 25-Feb-2024 |
 | Status | Complete |
-| Location | https://github.com/rambasnet/csci000-astudent/tree/master/assignments/cpp/egypt |
-| Self Grade | 80/100 |
-| Notes | completed the solution; couldn't write test cases |
+| Location | https://github.com/mooshuthepursian/CSCI130-larmamento/blob/main/assignments/HW2/main.cpp |
+| Self Grade | 100/100 |
+| Notes | Completed this assignment by using the circle lab as an example |
 
 ### Assignment #1
 
@@ -58,13 +58,13 @@
 
 | Name | Value |
 | :--- | :--- |
-| Name | 3 - Functions and Unittest Lab |
+| Name | 3 - not sure |
 | Description | Lab covering standard input and output |
-| Due Date | 10-Jan-20 |
+| Due Date | 25-Feb-24 |
 | Status | complete |
 | Location | https://github.com/rambasnet/csci000-astudent/tree/master/labs/cpp/stdio |
 | Self Grade | 100/100 |
-| Notes | typed the given code stub; fixed all the fixmes; learned about stdio |
+| Notes | N/A |
 
 ### Lab #2
 
