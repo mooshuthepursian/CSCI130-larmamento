@@ -50,7 +50,6 @@ int main()
 	cout << "Area of the triangle is:\t" << area << '\n';
 	cout << "Perimeter of the triangle is:\t" << perimeter << '\n';
 
-	// the following code may be required to make your console pause...
 	cout << "Good bye...\nHit enter to exit the program!" << '\n';
 	cin.ignore(1000, '\n'); 
 	cin.get();
