@@ -10,15 +10,25 @@ using namespace std;
 
 int main()
 {
-    char quitCh;
-    cout << "Do you want to quit [y/n]? ";
-    cin >> quitCh;
-
-    while(quitCh != 'Y' && quitCh != 'y')
+    int someNumber;
+    do
     {
-        coyt << "Now do you want to quit [Y/N]? ";
-        cin >> quitCh; 
+        cout << "Enter a number between 1 and 20: ";
+        cin >> someNumber; 
     }
+    while (someNumber < 1 || someNumer > 20);
+
+    // char quitCh;
+    // cout << "Do you want to quit [y/n]? ";
+    // cin >> quitCh;
+
+    // while(quitCh != 'Y' && quitCh != 'y')
+    // {
+    //     coyt << "Now do you want to quit [Y/N]? ";
+    //     cin >> quitCh; 
+    // }
+
+
     // int counter = 0;
     // int inputNumber;
     // cout << "Enter number between 1 and 20: "; 
