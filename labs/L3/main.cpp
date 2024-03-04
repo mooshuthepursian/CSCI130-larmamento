@@ -49,9 +49,11 @@ int main()
 {
     int x1, y1, x2, y2; // variables to store two points (x1, y1) and (x2, y2)
     char ch;
-
+    double distance = 0.0;
+    bool isRunning = true;
     //FIXME-bonus - 10 bonus points - add loop until user wants to quit
     // the loop will execute the following block of code
+    while (isRunning)
     {
         clearScreen();
         cout << "Program calculates distance between 2 points on a 2D coordinate." << endl;
@@ -65,46 +67,54 @@ int main()
         cin >> ch >> y2;
         printf("(x2, y2) = (%d, %d)\n", x2, y2);
         //FIXME3 - Read/parse the second point and store data into variables x2 and y2
-        void test()
+        void test();
         //FIXME4 - Call test function
 
         //FIXME5 - call findDistance function passing proper arguments
-        findDistance(int x1, int y1, int x2, int y2)
+        distance = findDistance(x1, y1, x2, y2);
         //FIXME6 – Using printf function display the returned distance with proper description
-        printf("Distance between the two points: \t", distance); 
-    }
+        printf("Distance between the two points: %f", distance); 
 
     cin.ignore(1000, '\n');
-    cout << "Enter to quit the program: ";
-    cin.get();
-    cout << "Good bye..." << endl;
-    return 0;
+    cout << "Would you like to keep program running? \n";
+    cin >> ch;
+    if(ch =='Y')
+    {
+        isRunning = true;
+    }
+    else 
+    {
+        isRunning = false;
+        cout << "Good bye..." << endl;
+        return 0;
+    }
+    }
 }
 
 double findDistance(int x1, int y1, int x2, int y2)
 {
-    // cout << "This program will now find the distance between the two points... ";
-    //     findDistance(int x1, int y1, int x2, int y2);
-    //     cin >> findDistance >> (((x2-x1)^2)+((y2-y1)^2))^(1/2);
-    //     cout << "distance = \t" << findDistance(int x1, int y1, int x2, int y2) << '\n';
+     cout << "This program will now find the distance between the two points... ";
+         double distance = sqrt(pow(x2-x1,2) + pow(y2-y1,2));
+         cout << distance << endl;
 
     // FIXME7 - Find the distance between (x1, y1) and (x2, y2)
     // following the algorithm in step 1
     // return the calculated distance
-    return 0.000000;
+    return distance;
 }
 
 // test function that test findDistance function with 3 test cases
 void test()
 {
-    float result =  findDistance(4, 3, 5, 1);
-    float expected = 2.236067f;
-    assert( fabs(result - expected) <= epsilon); //accept the result if it's less than the error of margin
-    float result = findDistance(5, 6, 7, 0);
-    float expected = 6.32455532f;
-    assert( fabs(result - expected) <= epsilon);
-    float result = findDistance(3, 2, 4, 5);
-    float expected = 3.16227766f;
+    float result0 =  findDistance(4, 3, 5, 1);
+    float expected0 = 2.236067f;
+    assert( fabs(result0 - expected0) <= epsilon); //accept the result if it's less than the error of margin
+    float result1 = findDistance(5, 6, 7, 0);
+    float expected1 = 6.32455532f;
+    assert( fabs(result1 - expected1) <= epsilon);
+    float result2 = findDistance(3, 2, 4, 5);
+    float expected2 = 3.16227766f;
+    assert( fabs(result2 - expected2) <= epsilon);
     // FIXME8 - add at least two more test cases
     cerr << "all tests passed..." << endl;
 }
