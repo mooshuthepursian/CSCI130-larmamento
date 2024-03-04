@@ -58,13 +58,13 @@
 
 | Name | Value |
 | :--- | :--- |
-| Name | 3 - not sure |
-| Description | Lab covering standard input and output |
-| Due Date | 25-Feb-24 |
+| Name | 3 - Distance |
+| Description | Lab that finds the distance between two points |
+| Due Date | 3-4-24 |
 | Status | complete |
-| Location | https://github.com/rambasnet/csci000-astudent/tree/master/labs/cpp/stdio |
+| Location | https://github.com/mooshuthepursian/CSCI130-larmamento/blob/main/labs/L3/main.cpp |
 | Self Grade | 100/100 |
-| Notes | N/A |
+| Notes | Fixed all of the FIXMES |
 
 ### Lab #2
 
