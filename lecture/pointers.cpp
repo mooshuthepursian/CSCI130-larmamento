@@ -9,8 +9,12 @@ POINTERS!!!!!!!!!!!!!!!!
 using namespace std;
 void addNums(int*, int*);
 
-int main()
+int main(int argc, char* argv[])
 {
+    
+    // cout << "argc: " << argc << endl;
+    // cout << "argv[0]: " << argv{0} << endl;
+    // return 0;
     // num1 = new int;
     // string* str1 = new string;
     // long* long1 = new long(8888888888);
@@ -147,33 +151,45 @@ int main()
     // cout << "ptr1;\t" << ptr1 << endl;
     // cout << "&ptr1:\t" << &ptr1 << endl;
 
-    int n1, n2;
-    int* ptr1;
-    int* ptr2;
+    // int*numbers[10];
+    // for(int i=0; i<10; i++)
+    // {
+    //     // int *number1 = new int;
+    //     // int *number1;
+    //     // number1 = new int;
+    //     // numbers[i] = number1;
 
-    ptr1 = &n1;
-    ptr2 = &n2;
-
-    cout << "Enter two numbers: ";
-    cin >> *ptr1 >> *ptr2;
-
-    cout << "ptr1: " << ptr1 << endl;
-    cout << "ptr2: " << ptr2 << endl;
-    addNums(&ptr1, &ptr2);
-
-    cout << "n1: " << n1 << endl;
-    cout << "n2: " << n2 << endl;
+    //     numbers[i] = new int;
+    // }
     
-    return 0
-}
 
-void addNums(int** num1, int** num2);
-{
-    cout << "num1: " << num1 << endl;
-    cout << "num2: " << num2 << endl;
-    cout << **num1 << "+" << **num2 << "=" 
-         << **num1 + **num2 << endl;
+//     int n1, n2;
+//     int* ptr1;
+//     int* ptr2;
 
-    **num1 = 9000;
-    **num2 = 10000;
-}
+//     ptr1 = &n1;
+//     ptr2 = &n2;
+
+//     cout << "Enter two numbers: ";
+//     cin >> *ptr1 >> *ptr2;
+
+//     cout << "ptr1: " << ptr1 << endl;
+//     cout << "ptr2: " << ptr2 << endl;
+//     addNums(&ptr1, &ptr2);
+
+//     cout << "n1: " << n1 << endl;
+//     cout << "n2: " << n2 << endl;
+    
+//     return 0
+// }
+
+// void addNums(int** num1, int** num2);
+// {
+//     cout << "num1: " << num1 << endl;
+//     cout << "num2: " << num2 << endl;
+//     cout << **num1 << "+" << **num2 << "=" 
+//          << **num1 + **num2 << endl;
+
+//     **num1 = 9000;
+//     **num2 = 10000;
+ }
