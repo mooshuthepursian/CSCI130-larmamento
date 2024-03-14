@@ -13,6 +13,16 @@
 | **Repository**          | https://github.com/rambasnet/csci000-astudent |
 
 ## Assignments
+### Assignments #3
+| Name | Value |
+| :--- | :--- |
+| Name | Functions Calculator |
+| Description | Adding, subtracting, multiplying, remainder, divide, squareroot of two numbers  |
+| Due Date | 12-March-2024 |
+| Status | Complete |
+| Location | https://github.com/mooshuthepursian/CSCI130-larmamento/blob/main/assignments/HW3/functions.cpp |
+| Self Grade | 100/100 |
+| Notes | N/A |
 
 ### Assignment #2
 
