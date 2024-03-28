@@ -22,6 +22,7 @@ Define a function that takes five numbers and returns if the floor of the sum of
 #include <string>
 #include <cstdio>
 #include <cassert>
+#include <cmath>
 
 using namespace std; 
 void printMenu(void);
@@ -158,19 +159,7 @@ int main(int argc, char* argv[])
         {
             getFiveNumbers(num1, num2, num3, num4, num5);
             double oddeven0 = findSum(num1, num2, num3, num4, num5);
-            if (oddeven0 == 0)
-            {
-                cout << oddeven0 << "is an even number";
-                printf ("%.2f + %.2f + %.2f + %.2f + %.2f = %.2f\n", num1, num2, num3, num4, num5, oddeven0);
-            }
-            if (oddeven0 == 1)
-            {
-                cout << oddeven0 << "is an odd number";
-            }
-            else
-            {
-                cout << oddeven0 << "is 0"; 
-            }
+            //using floor function 
             
             break;
         }
