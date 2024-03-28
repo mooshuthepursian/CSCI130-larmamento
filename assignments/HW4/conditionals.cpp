@@ -32,17 +32,12 @@ double findAverage(const double &n1, const double &n2, const double &n3, const d
 double findLarger(const double &n1, const double &n2, const double &n3, const double &n4, const double &n5);
 double findSmaller(const double &n1, const double &n2, const double &n3, const double &n4, const double &n5); 
 
+void test();
 
-int main(int argc, char* argv[]) {
-string name = "User";
-	cout << "Hi there, what's your first and last name? ";
-    string inputName;
-    cout << ": ";
-    getline(cin, inputName); 
+bool program();
 
-	cout << "Nice meeting you, " << inputName << "!" << endl;
-}
-void printMenu(void) 
+
+void printMenu(void)
 {
     cout << "Menu options:\n";
     cout << "[1] Sum of the 5 numbers\n";
@@ -51,8 +46,8 @@ void printMenu(void)
     cout << "[4] Find larger of the five numbers\n";
     cout << "[5] Find smaller of the five numbers\n";
     cout << "[6] Calculates if the floor of the sum of those numbers is even, odd or zero\n";
-    cout << "[7] Quit the program\n";
-    cout << "Enter one of the menu options [1-7]: ";
+
+    cout << "Enter one of the menu options [1-6]: ";
 }
 void getFiveNumbers(double &n1, double &n2, double &n3, double &n4, double &n5) 
 {
@@ -79,25 +74,39 @@ double findAverage(const double &n1, const double &n2, const double &n3, const d
 
 double findLarger(const double &n1, const double &n2, const double &n3, const double &n4, const double &n5) 
 {
-    double larger = (n1 >= n2 >= n3 >= n4 >= n5) ? n1 : n2 :: n3 : n4 : n5;
-    return larger;
+    double larger1 = (n1 >= n2) ? n1 : n2;
+    double larger2 = ( larger1 >= n3) ?  larger1 : n3;
+    double larger3 = ( larger2 >= n4) ?  larger2 : n4;
+    double larger4 = ( larger3 >= n5) ?  larger3 : n5;
+    return larger4;
 }
 
 double findSmaller(const double &n1, const double &n2, const double &n3, const double &n4, const double &n5) 
 {
-    double smaller = (n1 <= n2 <= n3 <= n4 <= n5) ? n1 : n2 :: n3 : n4 : n5;
-    return smaller;
+    double smaller1 = (n1 <= n2) ? n1 : n2;
+    double smaller2 = ( smaller1 >= n3) ?  smaller1 : n3;
+    double smaller3 = ( smaller2 >= n4) ?  smaller2 : n4;
+    double smaller4 = ( smaller3 >= n5) ?  smaller3 : n5;
+    return smaller4;
 }
 
-bool program() 
+int main(int argc, char* argv[])
 {
+    string name = "User";
+ 	 cout << "Hi there, what's your first and last name? ";
+     string inputName;
+     cout << ": ";
+     getline(cin, inputName); 
+
+ 	cout << "Nice meeting you, " << inputName << "!" << endl;
+
     int option = 1; // variable to store user entered option
     double num1=0, num2=0, num3=0, num4=0, num5=0; // variables to store two numbers entered by user
     // display menu options
     printMenu();
     // Input validation
     do {
-        if (cin >> option && option >= 1 && option <= 7) {
+        if (cin >> option && option >= 1 && option <= 6) {
             //input is valid, break loop
             break;
         }
@@ -108,7 +117,7 @@ bool program()
         }
     } while (true);
 
-switch(option) {
+    switch(option) {
         case 1:
         {
             getFiveNumbers(num1, num2, num3, num4, num5);
@@ -145,10 +154,24 @@ switch(option) {
             printf ("%.2f + %.2f + %.2f + %.2f + %.2f/ 5 = %.2f\n", num1, num2, num3, num4, num5, avg);
             break;
         }
-        case 7:
-        default: 
-            return false; 
-    }
-    return true;
-}
-
+        case 6: 
+        {
+            getFiveNumbers(num1, num2, num3, num4, num5);
+            double oddeven0 = findSum(num1, num2, num3, num4, num5);
+            if (oddeven0 == 0)
+            {
+                cout << oddeven0 << "is an even number";
+                printf ("%.2f + %.2f + %.2f + %.2f + %.2f = %.2f\n", num1, num2, num3, num4, num5, oddeven0);
+            }
+            if (oddeven0 == 1)
+            {
+                cout << oddeven0 << "is an odd number";
+            }
+            else
+            {
+                cout << oddeven0 << "is 0"; 
+            }
+            
+            break;
+        }
+}}
