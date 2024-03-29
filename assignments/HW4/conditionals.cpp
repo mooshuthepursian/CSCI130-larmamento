@@ -27,13 +27,41 @@ Define a function that takes five numbers and returns if the floor of the sum of
 using namespace std; 
 void printMenu(void);
 void getFiveNumbers(double &n1, double &n2, double &n3, double &n4, double &n5);
-double findSum(const double &n1, const double &n2, const double &n3, const double &n4, const double &n5);
+// double findSum(const double &n1, const double &n2, const double &n3, const double &n4, const double &n5);
 double findProduct(const double &n1, const double &n2, const double &n3, const double &n4, const double &n5);
 double findAverage(const double &n1, const double &n2, const double &n3, const double &n4, const double &n5, double &avg);
 double findLarger(const double &n1, const double &n2, const double &n3, const double &n4, const double &n5);
 double findSmaller(const double &n1, const double &n2, const double &n3, const double &n4, const double &n5); 
+int flor(double &, double &, double &, double &, double &); 
+template<typename T>
+T findSum(T, T, T, T, T);
 
 void test();
+{
+    float result0sum = findSum(2, 2, 2, 2, 2);
+    float expected0sum = 10;
+    assert( fabs(result0sum - expected0sum) <= epsilon);
+
+    float result0product = findProduct(2, 2, 2, 2, 2);
+    float expected0sum = 10;
+    assert( fabs(result0sum - expected0sum) <= epsilon);
+
+    float result0sum = findSum(2, 2, 2, 2, 2);
+    float expected0sum = 10;
+    assert( fabs(result0sum - expected0sum) <= epsilon);
+
+    float result0sum = findSum(2, 2, 2, 2, 2);
+    float expected0sum = 10;
+    assert( fabs(result0sum - expected0sum) <= epsilon);
+
+    float result0sum = findSum(2, 2, 2, 2, 2);
+    float expected0sum = 10;
+    assert( fabs(result0sum - expected0sum) <= epsilon); 
+
+    float result0sum = findSum(2, 2, 2, 2, 2);
+    float expected0sum = 10;
+    assert( fabs(result0sum - expected0sum) <= epsilon);
+}
 
 bool program();
 
@@ -57,10 +85,11 @@ void getFiveNumbers(double &n1, double &n2, double &n3, double &n4, double &n5)
 }
 
 
-double findSum(const double &n1, const double &n2, const double &n3, const double &n4, const double &n5) 
+template <typename T> T findSum(T n1, T n2, T n3, T n4, T n5)
 {
-    return (n1 + n2 +n3 +n4 +n5);
+    return n1 + n2 + n3 + n4 + n5;
 }
+
 
 double findProduct(const double &n1, const double &n2, const double &n3, const double &n4, const double &n5) 
 {
@@ -158,8 +187,21 @@ int main(int argc, char* argv[])
         case 6: 
         {
             getFiveNumbers(num1, num2, num3, num4, num5);
-            double oddeven0 = findSum(num1, num2, num3, num4, num5);
-            //using floor function 
+            int flor = floor(findSum(num1, num2, num3, num4, num5));
+
+            if (flor == 0)
+            {
+                cout << "The floor is zero.\n";
+            }
+            else if (flor % 2 == 1)
+            {
+                cout << "The floor is odd. \n";
+            }
+            else
+            {
+                cout << "The floor is even. \n";
+            }
+            
             
             break;
         }
