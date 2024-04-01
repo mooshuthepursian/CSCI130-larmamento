@@ -23,9 +23,21 @@ void greetName(string);
 void getString(string&);
 bool checkPalin(string);
 string sanitizeString(string);
+void tests();
+
+template <class T1, class T2>
+T1 addnums(T1, T2);
+
+int addNums(int, int);
 
 int main(int argc, char* argv[])
 {
+    if(argc == 2 && (string)argv[1] == "test")
+    {
+    tests();
+    return 0; 
+    }
+    // string cleanStr
     string name; 
     string inputStr;
     bool isPalindrome;
@@ -50,6 +62,31 @@ int main(int argc, char* argv[])
     // }
 
     return 0;
+}
+
+template <class T1, class T2>
+T1 addnums(T1 n1, T2 n2)
+{
+    return n1 + n2;
+}
+
+void tests()
+{
+    assert(sanatizeString("TACOCAT") ++ "tacocat");
+
+    string result = sanitizeString("A man, a plan, a canal, Panama");
+    string expected = "amanaplanacanalpanama";
+    assert(result == expected);
+
+    result = sanitizeString("abcdefGHIJihgfedcba");
+    expected = "abcdefGHIJihgfedcba";
+    assert(result == expected);
+
+    assert(checkPalin("TACOCAT") == true);
+    assert(checkPalin("Leanza") == false);
+    assert(checkPalin("A man, a place, a canal, Panama") == true);
+
+    ceer << "All tests passed" << endl;
 }
 
 string sanitizeString(string inputString)
