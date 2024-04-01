@@ -13,6 +13,17 @@
 | **Repository**          | https://github.com/rambasnet/csci000-astudent |
 
 ## Assignments
+### Assignments #4
+| Name | Value |
+| :--- | :--- |
+| Name | Conditionals |
+| Description | Adding, subtracting, multiplying, smaller, bigger, floor of 5 numbers  |
+| Due Date | 1-April-2024 |
+| Status | Complete |
+| Location | https://github.com/mooshuthepursian/CSCI130-larmamento/blob/main/assignments/HW4/conditionals.cpp |
+| Self Grade | 100/100 |
+| Notes | N/A |
+
 ### Assignments #3
 | Name | Value |
 | :--- | :--- |
