@@ -33,35 +33,14 @@ double findAverage(const double &n1, const double &n2, const double &n3, const d
 double findLarger(const double &n1, const double &n2, const double &n3, const double &n4, const double &n5);
 double findSmaller(const double &n1, const double &n2, const double &n3, const double &n4, const double &n5); 
 int flor(double &, double &, double &, double &, double &); 
+double avg=0;
+double product =0;
+double sum=0;
 template<typename T>
 T findSum(T, T, T, T, T);
+const float epsilon = 1e-5;
 
 void test();
-{
-    float result0sum = findSum(2, 2, 2, 2, 2);
-    float expected0sum = 10;
-    assert( fabs(result0sum - expected0sum) <= epsilon);
-
-    float result0product = findProduct(2, 2, 2, 2, 2);
-    float expected0sum = 10;
-    assert( fabs(result0sum - expected0sum) <= epsilon);
-
-    float result0sum = findSum(2, 2, 2, 2, 2);
-    float expected0sum = 10;
-    assert( fabs(result0sum - expected0sum) <= epsilon);
-
-    float result0sum = findSum(2, 2, 2, 2, 2);
-    float expected0sum = 10;
-    assert( fabs(result0sum - expected0sum) <= epsilon);
-
-    float result0sum = findSum(2, 2, 2, 2, 2);
-    float expected0sum = 10;
-    assert( fabs(result0sum - expected0sum) <= epsilon); 
-
-    float result0sum = findSum(2, 2, 2, 2, 2);
-    float expected0sum = 10;
-    assert( fabs(result0sum - expected0sum) <= epsilon);
-}
 
 bool program();
 
@@ -87,16 +66,18 @@ void getFiveNumbers(double &n1, double &n2, double &n3, double &n4, double &n5)
 
 template <typename T> T findSum(T n1, T n2, T n3, T n4, T n5)
 {
-    return n1 + n2 + n3 + n4 + n5;
+    sum = n1 + n2 + n3 + n4 + n5; 
+    return sum;
 }
 
 
 double findProduct(const double &n1, const double &n2, const double &n3, const double &n4, const double &n5) 
 {
-    return (n1*n2*n3*n4*n5);
+    product = (n1*n2*n3*n4*n5);
+    return product;
 }
 
-double findAverage(const double &n1, const double &n2, const double &n3, const double &n4, const double &n5, double &avg) 
+double findAverage(const double &n1, const double &n2, const double &n3, const double &n4, const double &n5) 
 {
     avg = findSum(n1, n2, n3, n4, n5)/5; 
     return avg; 
@@ -122,6 +103,11 @@ double findSmaller(const double &n1, const double &n2, const double &n3, const d
 
 int main(int argc, char* argv[])
 {
+    if(argc == 2 && (string)argv[1] == "test")
+{
+    test();
+    return 0; 
+}
     string name = "User";
  	 cout << "Hi there, what's your first and last name? ";
      string inputName;
@@ -204,5 +190,32 @@ int main(int argc, char* argv[])
             
             
             break;
-        }
-}}
+        }}}
+        
+void test()
+{
+    float result0Sum = findSum(2, 2, 2, 2, 2);
+    float expected0Sum = 10;
+    assert( fabs(result0Sum - expected0Sum) <= epsilon);
+
+    float result0Product = findProduct(2, 2, 2, 2, 2);
+    float expected0Product = 10;
+    assert( fabs(result0Product - expected0Product) <= epsilon);
+
+    float result0Average = findAverage(4, 8, 6, 2, 10);
+    float expected0Average = 6;
+    assert( fabs(result0Average - expected0Average) <= epsilon);
+
+    float result0Larger = findLarger(2, 3, 4, 5, 1);
+    float expected0Larger = 5;
+    assert( fabs(result0Larger - expected0Larger) <= epsilon); 
+
+    float result0Smaller = findSmaller(2, 3, 4, 5, 1);
+    float expected0Smaller = 1;
+    assert( fabs(result0Smaller - expected0Smaller) <= epsilon);
+
+    float result0Flor = floor(findSum(2, 5, 3, 6, 8));
+    float expected0Flor = 24;
+    assert( fabs(result0Flor - expected0Flor) <= epsilon); 
+    cerr << "all tests passed..." << endl;
+}
