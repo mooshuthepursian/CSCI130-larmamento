@@ -29,7 +29,7 @@ void printMenu(void);
 void getFiveNumbers(double &n1, double &n2, double &n3, double &n4, double &n5);
 // double findSum(const double &n1, const double &n2, const double &n3, const double &n4, const double &n5);
 double findProduct(const double &n1, const double &n2, const double &n3, const double &n4, const double &n5);
-double findAverage(const double &n1, const double &n2, const double &n3, const double &n4, const double &n5, double &avg);
+double findAverage(const double &n1, const double &n2, const double &n3, const double &n4, const double &n5);
 double findLarger(const double &n1, const double &n2, const double &n3, const double &n4, const double &n5);
 double findSmaller(const double &n1, const double &n2, const double &n3, const double &n4, const double &n5); 
 int flor(double &, double &, double &, double &, double &); 
@@ -165,8 +165,7 @@ int main(int argc, char* argv[])
         case 3: 
         {
             getFiveNumbers(num1, num2, num3, num4, num5);
-            double avg = 0;
-            findAverage(num1, num2, num3, num4, num5 ,avg);
+            double avg = findAverage(num1, num2, num3, num4, num5);
             printf ("%.2f + %.2f + %.2f + %.2f + %.2f/ 5 = %.2f\n", num1, num2, num3, num4, num5, avg);
             break;
         }
