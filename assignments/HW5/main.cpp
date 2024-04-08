@@ -39,9 +39,11 @@ percentage of times lost
 #include <ctime>
 using namespace std;
 
-// void getnums 1-20 = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20;
+double playerguess = 0;
+const float epsilon = 1e-5;
+double multitries = 6;
 
-int main()
+int game()
 {
 string name = "User";
 	cout << "Hi there, what's your first and last name? ";
@@ -50,23 +52,80 @@ string name = "User";
     getline(cin, inputName); 
 
 cout << "Nice meeting you, " << inputName << "!" << endl;
+cout << "Welcome to the Number Guessing Game!" << endl;
+
+ while(playerguess && multitries < 6)
+ {
+     cout << "" << endl;
+ }
+
+ while(playerguess && multitries >=6)
+ {
+     cout << "You lose, no more tries." << endl;
+ }
+return 0;
 }
 
 // Define a function called randomNumber that generates and returns a random number between 1 and 20. (5 points)
-void int randomNumber ()
+int randomNumber (void)
 {
-    int num = rand();
-    randomNumber=(num%20)+1;
-    // randomNumber( n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11, n12, n13, n14, n15, n16, n17, n18, n19, n20);
-    return randomNumber; 
+    srand(time(0));
+    cout << rand() % 20 *1 << endl;
+    return 0; 
 }
 
-
 // Define a function called readNumber that prompts the user to take a guess and return the guessed number. (10 points)
+int readNumber (void)
+{
+    cout << "You get 6 tries to guess the number. Please try to guess a number between 1-20: " << endl;
+    cin >> playerguess; 
+    cout << "You have guessed: " << playerguess << endl; 
+    int playerguess;
+    while(true);
+    if (playerguess >= 1 && playerguess <= 20) 
+    {
+        return playerguess;
+    } 
+    else 
+    {
+        cout << "Please enter a number between 1 and 20." << endl;
+    }
+}
 
 // 4) Validate the guessed number to be between 1 and 20.
 // 5) Define a function called checkGuess that takes two integers compares the two numbers and returns the following result: (10 points)
-// 6) return 0 if the numbers are equal
+int checkGuess (int num1, int num2)
+{
+    if (num1 == num2)
+    {
+        return 0;
+    }
+    else if (num1 < num2)
+    {
+        return -1;
+    }
+    else
+    {
+        return 1;
+    }
+}
+
+void test()
+{
+    // float num1 = playerguess;
+    // float num2 = 10;
+    // assert(num1 == num2);
+
+    // float num1 = playerguess;
+    // float num2 = 19;
+    // assert(num1 < num2);
+
+    // float num1 = playerguess;
+    // float num2 = 20;
+    // assert(else); 
+    // cerr << "all tests passed..." << endl;
+
+}
 
 
     
