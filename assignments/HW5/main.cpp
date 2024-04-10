@@ -43,28 +43,6 @@ double playerguess = 0;
 const float epsilon = 1e-5;
 double multitries = 6;
 
-int game()
-{
-string name = "User";
-	cout << "Hi there, what's your first and last name? ";
-    string inputName;
-    cout << ": ";
-    getline(cin, inputName); 
-
-cout << "Nice meeting you, " << inputName << "!" << endl;
-cout << "Welcome to the Number Guessing Game!" << endl;
-
- while(playerguess && multitries < 6)
- {
-     cout << "" << endl;
- }
-
- while(playerguess && multitries >=6)
- {
-     cout << "You lose, no more tries." << endl;
- }
-return 0;
-}
 
 // Define a function called randomNumber that generates and returns a random number between 1 and 20. (5 points)
 int randomNumber (void)
@@ -108,6 +86,33 @@ int checkGuess (int num1, int num2)
     {
         return 1;
     }
+}
+double readNum=0;
+double randNum=0;
+
+int main()
+{
+string name = "User";
+	cout << "Hi there, what's your first and last name? ";
+    string inputName;
+    cout << ": ";
+    getline(cin, inputName); 
+
+cout << "Nice meeting you, " << inputName << "!" << endl;
+cout << "Welcome to the Number Guessing Game!" << endl;
+randNum= randomNumber();
+readNum= readNumber();
+
+//  while(playerguess && multitries < 6)
+//  {
+//      cout << "" << endl;
+//  }
+
+//  while(playerguess && multitries >=6)
+//  {
+//      cout << "You lose, no more tries." << endl;
+//  }
+return 0;
 }
 
 void test()
