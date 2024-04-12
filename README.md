@@ -13,6 +13,17 @@
 | **Repository**          | https://github.com/rambasnet/csci000-astudent |
 
 ## Assignments
+### Assignments #5
+| Name | Value |
+| :--- | :--- |
+| Name | Number Guessing Game |
+| Description | Player tries to guess a number between 1-20 and gets 6 tries to do so  |
+| Due Date | 12-April-2024 |
+| Status | Complete |
+| Location | https://github.com/mooshuthepursian/CSCI130-larmamento/tree/main/assignments/HW5 |
+| Self Grade | 100/100 |
+| Notes | N/A |
+
 ### Assignments #4
 | Name | Value |
 | :--- | :--- |
