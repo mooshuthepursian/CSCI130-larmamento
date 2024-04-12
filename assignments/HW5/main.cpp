@@ -87,8 +87,18 @@ int checkGuess (int num1, int num2)
         return 1;
     }
 }
+void game () 
+{
 double readNum=0;
 double randNum=0;
+int playerguess = 0;
+bool won = true;
+}
+
+for(int i=0; i <6; i++)
+{
+    playerguess = 
+}
 
 int main()
 {
@@ -117,19 +127,10 @@ return 0;
 
 void test()
 {
-    // float num1 = playerguess;
-    // float num2 = 10;
-    // assert(num1 == num2);
-
-    // float num1 = playerguess;
-    // float num2 = 19;
-    // assert(num1 < num2);
-
-    // float num1 = playerguess;
-    // float num2 = 20;
-    // assert(else); 
-    // cerr << "all tests passed..." << endl;
-
+    double test1=6, test2=7, test3=1, test4=9, test5=4, test6=24;
+    assert(checkGuess (test1, test2) == -1);
+    assert(checkGuess (test3, test4) == -1);
+    assert(checkGuess (test5, test6) == -1);
 }
 
 
