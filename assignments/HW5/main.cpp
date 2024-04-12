@@ -33,96 +33,85 @@ percentage of times lost
 
 
 #include <iostream>
-#include <cstdio>
-#include <cmath>
-#include <cassert>
+#include <cstdlib>
 #include <ctime>
+#include <cassert>
+#include <string>
 using namespace std;
 
-double playerguess = 0;
-const float epsilon = 1e-5;
-double multitries = 6;
-
-
-// Define a function called randomNumber that generates and returns a random number between 1 and 20. (5 points)
-int randomNumber (void)
-{
+// Define a function called randomNumber that generates and returns a random number between 1 and 20.
+int randomNumber() {
     srand(time(0));
-    cout << rand() % 20 *1 << endl;
-    return 0; 
+    return rand() % 20 + 1;
 }
 
-// Define a function called readNumber that prompts the user to take a guess and return the guessed number. (10 points)
-int readNumber (void)
-{
-    cout << "You get 6 tries to guess the number. Please try to guess a number between 1-20: " << endl;
-    cin >> playerguess; 
-    cout << "You have guessed: " << playerguess << endl; 
+// Define a function called readNumber that prompts the user to take a guess and return the guessed number.
+int readNumber() {
     int playerguess;
-    while(true);
-    if (playerguess >= 1 && playerguess <= 20) 
-    {
-        return playerguess;
-    } 
-    else 
-    {
-        cout << "Please enter a number between 1 and 20." << endl;
-    }
+    cout << "You get 6 tries to guess the number. Please try to guess a number between 1-20: " << endl;
+    do {
+        cin >> playerguess;
+        if (playerguess >= 1 && playerguess <= 20) {
+            break;
+        } else {
+            cout << "Please enter a number between 1 and 20." << endl;
+        }
+    } while (true);
+    return playerguess;
 }
 
-// 4) Validate the guessed number to be between 1 and 20.
-// 5) Define a function called checkGuess that takes two integers compares the two numbers and returns the following result: (10 points)
-int checkGuess (int num1, int num2)
-{
-    if (num1 == num2)
-    {
+// Define a function called checkGuess that takes two integers compares the two numbers and returns the following result:
+int checkGuess(int num1, int num2) {
+    if (num1 == num2) {
         return 0;
-    }
-    else if (num1 < num2)
-    {
+    } else if (num1 < num2) {
         return -1;
-    }
-    else
-    {
+    } else {
         return 1;
     }
 }
-void game () 
-{
-double readNum=0;
-double randNum=0;
-int playerguess = 0;
-bool won = true;
+
+void game() {
+    int randNum = randomNumber();
+    int playerGuess;
+    bool won = false;
+
+    for (int i = 0; i < 6; i++) {
+        playerGuess = readNumber();
+        int stats = checkGuess(playerGuess, randNum);
+        if (stats == 0) {
+            won = true;
+            cout << "You may have won this time, but next time I will get you!!!!!!!!!!" << endl;
+            break;
+        } else if (stats == 1) {
+            cout << "Almost, your guess is too high" << endl;
+        } else {
+            cout << "Almost, your guess is too low" << endl;
+        }
+    }
+
+    if (!won) {
+        cout << "You lose :(" << endl;
+        cout << "The random number is: " << randNum << endl;
+    }
 }
 
-for(int i=0; i <6; i++)
-{
-    playerguess = 
-}
+int main() {
+    string playGameAgain;
+    bool keepRunning = true;
 
-int main()
-{
-string name = "User";
-	cout << "Hi there, what's your first and last name? ";
-    string inputName;
-    cout << ": ";
-    getline(cin, inputName); 
+    cout << "Welcome to the Number Guessing Game!" << endl;
 
-cout << "Nice meeting you, " << inputName << "!" << endl;
-cout << "Welcome to the Number Guessing Game!" << endl;
-randNum= randomNumber();
-readNum= readNumber();
+    do {
+        game();
+        cout << "Do you want to play the game again? (Y/N): ";
+        cin >> playGameAgain;
+        if (playGameAgain != "Y" && playGameAgain != "y") {
+            keepRunning = false;
+        }
+    } while (keepRunning);
 
-//  while(playerguess && multitries < 6)
-//  {
-//      cout << "" << endl;
-//  }
-
-//  while(playerguess && multitries >=6)
-//  {
-//      cout << "You lose, no more tries." << endl;
-//  }
-return 0;
+    return 0;
 }
 
 void test()
@@ -132,6 +121,4 @@ void test()
     assert(checkGuess (test3, test4) == -1);
     assert(checkGuess (test5, test6) == -1);
 }
-
-
     
