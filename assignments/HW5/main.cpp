@@ -105,7 +105,7 @@ int main() {
     do {
         game();
         cout << "Do you want to play the game again? (Y/N): ";
-        cin >> playGameAgain;
+
         if (playGameAgain != "Y" && playGameAgain != "y") {
             keepRunning = false;
         }

@@ -42,9 +42,19 @@ void printFlippedTriangle(int height) {
     
     */
     // FIXME3 ...
+    for (int i = 1; i <= height; i++) 
+    {
+        for (int j = height; j >= i; j--)
+        {
+            cout << "* ";
+        }
+        cout << endl; 
+    }
 }
 
 
+void showSquare(int height)
+{
 /*  
 FIXME4
 Design and implement a function that takes an integer as height and
@@ -58,6 +68,16 @@ Square of height 5, e.g., would look like the following.
 *  *  *  *  *   
 
 */
+for ( int i= 1; i <= height; i++)
+{ 
+    for (int j = 1; j <= height; j++)
+    { 
+        cout <<"* ";
+    }
+    cout << endl;
+}
+}
+
 
 // function clears the screen system call
 // NOTE: system call is not a security best pracice!
@@ -72,6 +92,10 @@ void clearScreen() {
 
 int main(int argc, char* argv[]) {
     // FIXME5 add a loop to make the program to continue to run until the user wants to quit
+    char usersChoice;
+    do {
+        clearScreen();
+
     // FIXME6 call clearScreen function to clear the screen for each round of the loop
     int height;
     cout << "Program prints geometric shapes of given height with *\n";
@@ -83,16 +107,21 @@ int main(int argc, char* argv[]) {
     // FIXME7
     // Call printFlippedTriangle passing proper argument
     // Manually test the function
+    printFlippedTriangle(height);
 
     // FIXME6
     // Call the function defined in FIXME4 passing proper argument
     // Manually test the function
+    showSquare(height);
 
     // FIXME9
     // prompt user to enter y/Y to continue anything else to quit
+    cout << "Would you like to continue running the program? Y/y? If you would like to quit the program press any other key." << endl;
 
     // FIXME10
     // Use conditional statements to break the loop or continue the loop
-
-    return 0;
+    cin >> usersChoice;
+    }
+    while (usersChoice == 'y' || usersChoice == 'Y');
+return 0;
 }
