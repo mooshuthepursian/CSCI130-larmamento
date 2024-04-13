@@ -74,6 +74,18 @@
 
 ## Labs
 
+### Lab #5
+
+| Name | Value |
+| :--- | :--- |
+| Name | 5 - Printing Geometric Shapes |
+| Description | Printing geometric shapes with stars |
+| Due Date | 13-April-2024 |
+| Status | complete |
+| Location | https://github.com/mooshuthepursian/CSCI130-larmamento/blob/main/labs/L5/main.cpp |
+| Self Grade | 100/100 |
+| Notes | typed the given code stub; fixed all the fixmes; learned about stdio |
+
 ### Lab #4
 
 | Name | Value |
