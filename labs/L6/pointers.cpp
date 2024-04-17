@@ -90,9 +90,14 @@ int main(int argc, char* argv[]) {
         case SUBTRACT:
             cout << "Enter two whole numbers seperated by a space: ";
             cin >> *num1 >> *num2;
-            *prod = MyFunctions::findDifference(*num1, *num2);
+            *diff = MyFunctions::findDifference(*num1, *num2);
             printf("%lld * %lld = %lld\n", *num1, *num2, *diff);
-            break;
+        // case LARGER:
+        //     cout << "Enter two whole numbers seperated by a space: ";
+        //     cin >> *num1 >> *num2;
+        //     *larger = MyFunctions::findLarger(*num1, *num2);
+        //     printf("%lld < %lld = %lld\n", *num1, *num2, *larger);
+        //     break;
         default:
             break;
     }}
@@ -139,6 +144,9 @@ OPERATION getOperation(char choice) {
             op = SUBTRACT;
             break;
         // FIXME7 - add case for LARGER
+        case '4':
+            op = LARGER;
+            break;
         default:
             op = QUIT;
     }
