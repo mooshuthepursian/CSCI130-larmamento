@@ -35,9 +35,11 @@ string answer(const string &line) {
     // implment algorithm step 2
     // return "hiss" if ss is found in line
     // otherwise, return "no hiss"
-    if ()
+    for (size_t i = 0; i < line.size() - 1; ++i) {
+        if (line[i] == 's' && line[i + 1] == 's') {
+            return "hiss";
         return "hiss";
-    else
+        }}
         return "no hiss";
     return 0;
 }
@@ -47,7 +49,7 @@ void testAnswer() {
     // FIXME4
     // write at least two test cases to test answer()
     assert(answer("hiss") == "hiss");
-    assert(answer("nohiss") == "no hiss");
+    assert(answer("no hiss") == "no hiss");
     cerr << "All test cases passed!\n";
 }
 
