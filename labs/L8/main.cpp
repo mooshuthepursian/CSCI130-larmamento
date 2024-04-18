@@ -57,6 +57,7 @@ void program() {
     findMaxAndMin(nums, size, max, min);
     printf("Max = %u\n", max);
     //FIXME2: print Min value
+	printf("Min = %u\n", min);
     printf("Sum = %lld\n",findSum(nums, size));
     cout << "Sorted list in ascending order:\n";
     bubbleSort(nums, size);

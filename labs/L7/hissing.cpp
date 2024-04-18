@@ -37,7 +37,7 @@ string answer(const string &line) {
     // otherwise, return "no hiss"
     for (size_t i = 0; i < line.size() - 1; ++i) {
         if (line[i] == 's' && line[i + 1] == 's') {
-            return "hiss";
+    
         return "hiss";
         }}
         return "no hiss";
