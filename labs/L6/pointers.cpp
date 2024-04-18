@@ -78,6 +78,8 @@ int main(int argc, char* argv[]) {
             // passing pointers to findSum function
             *sum = MyFunctions::findSum(num1, num2);
             printf("%lld + %lld = %lld\n", *num1, *num2, *sum);
+            cin.ignore(1000, '\n');
+            cin.get();
             break;
             // FIXME6: complete the rest of the cases to perform other operations
         case MULTIPLY:
@@ -87,18 +89,24 @@ int main(int argc, char* argv[]) {
             // passing pointers to findSum function
             *prod = MyFunctions::findProduct(*num1, *num2);
             printf("%lld * %lld = %lld\n", *num1, *num2, *prod);
+            cin.ignore(1000, '\n');
+            cin.get();
             break;
         case SUBTRACT:
             cout << "Enter two whole numbers seperated by a space: ";
             cin >> *num1 >> *num2;
             *diff = MyFunctions::findDifference(*num1, *num2);
             printf("%lld - %lld = %lld\n", *num1, *num2, *diff);
+            cin.ignore(1000, '\n');
+            cin.get();
             break;
         case LARGER:
             cout << "Enter two whole numbers separated by a space: ";
             cin >> *num1 >> *num2;
             *larger = MyFunctions::findLarger(num1, num2);
             printf("The larger number is: %lld\n", *larger);
+            cin.ignore(1000, '\n');
+            cin.get();
             break;
         case QUIT:
             cout << "Are you sure you want to quit? (y/n): ";
@@ -106,6 +114,8 @@ int main(int argc, char* argv[]) {
             if (input == 'y' || input == 'Y') {
                 cout << "Goodbyeeeeeeeeeeeeeeeeeee!\n";
             }
+            cin.ignore(1000, '\n');
+            cin.get();
             break;
 
         default:
