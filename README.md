@@ -74,7 +74,7 @@
 
 ## Labs
 
-### Lab #5
+### Lab #6
 
 | Name | Value |
 | :--- | :--- |
