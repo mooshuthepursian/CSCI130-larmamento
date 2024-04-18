@@ -74,6 +74,18 @@
 
 ## Labs
 
+### Lab #7
+
+| Name | Value |
+| :--- | :--- |
+| Name | 7 - Hissing |
+| Description | Determining if a word has "ss" |
+| Due Date | 18-April-2024 |
+| Status | complete |
+| Location | https://github.com/mooshuthepursian/CSCI130-larmamento/blob/main/labs/L7/hissing.cpp |
+| Self Grade | 100/100 |
+| Notes | typed the given code stub; fixed all the fixmes |
+
 ### Lab #6
 
 | Name | Value |
