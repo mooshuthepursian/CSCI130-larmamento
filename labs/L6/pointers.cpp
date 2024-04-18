@@ -105,18 +105,21 @@ int main(int argc, char* argv[]) {
             cin >> input;
             if (input == 'y' || input == 'Y') {
                 cout << "Goodbyeeeeeeeeeeeeeeeeeee!\n";
-        
+            }
             break;
 
         default:
             break;
-            }}}
+    
+    }}
     while (oper != QUIT);
     
     delete num1;
     delete num2;
     delete sum;
     delete prod;
+    delete diff;
+    delete larger;
 
     cin.ignore(1000, '\n');
     cout << "Good bye! Enter to exit the program...";
