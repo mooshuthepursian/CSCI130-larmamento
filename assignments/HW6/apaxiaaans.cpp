@@ -27,7 +27,7 @@ string simplifiedName(const string& inputName)
 
     simplifiedName = inputName[0]; 
 
-    for (size_t i = 1; i < inputName.length(); ++i) 
+    for (size_t i = 1; i < inputName.length(); ++i) // got help from michael couldn't understand logic 
     {
         if (inputName[i] != inputName[i - 1]) 
         {
@@ -53,8 +53,8 @@ int main()
 
 void test()
 {
-    string test1= "bobbbbbbbbbbbbbb", test2= "robbbbeerrtt", test3="johhnnnnnn";
-    assert(simplifiedName (test1) == "bob");
-    assert(simplifiedName (test2) == "robert");
+    string test2= "bobbbbbbbbbbbbbb", test1= "robeeeerrrrt", test3="johhnnnnnn";
+    assert(simplifiedName (test2) == "bob");
+    assert(simplifiedName (test1) == "robert");
     assert(simplifiedName (test3) == "john");
 }
