@@ -42,11 +42,11 @@ void test();
 int main()
 {
     string inputName;
-	cout << "Hi there, what is the name you wish to make simpler?";
+	//cout << "Hi there, what is the name you wish to make simpler?";
     cin >> inputName;
 
     string newName = simplifiedName(inputName);
-    cout << "Simplified Name: " << newName << endl;
+    cout << newName << endl;
 
     return 0; 
 }
