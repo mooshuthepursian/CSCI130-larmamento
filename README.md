@@ -13,6 +13,28 @@
 | **Repository**          | https://github.com/rambasnet/csci000-astudent |
 
 ## Assignments
+### Assignments #7
+| Name | Value |
+| :--- | :--- |
+| Name | Integers Problem  |
+| Description | User inputs a number and their values and program splits and identifies which numbers are odd or even it inbetween two people, then takes the sum of the odds and gives it to one person and the sum of the even and gives it to the other person.    |
+| Due Date | 30-April-2024 |
+| Status | Complete |
+| Location | https://github.com/mooshuthepursian/CSCI130-larmamento/blob/main/assignments/HW7/fallingapart.cpp |
+| Self Grade | 100/100 |
+| Notes | N/A |
+
+### Assignments #6
+| Name | Value |
+| :--- | :--- |
+| Name | APAXIANNSS |
+| Description | User inputs a name with a lot of extra repeats of letters and program simplifies it |
+| Due Date | 16-April-2024 |
+| Status | Complete |
+| Location | https://github.com/mooshuthepursian/CSCI130-larmamento/blob/main/assignments/HW6/apaxiaaans.cpp |
+| Self Grade | 100/100 |
+| Notes | N/A |
+
 ### Assignments #5
 | Name | Value |
 | :--- | :--- |
