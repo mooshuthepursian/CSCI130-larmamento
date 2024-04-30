@@ -82,7 +82,7 @@ int main() //michael taught me how to use sort function
         }
     }
 
-    cout << "SUM OF ODD: Alice's pieces are..." << AliceNum << endl;
+    cout << "SUM OF ODD: Alice's pieces are..."<< AliceNum << endl;
     cout << "SUM OF EVEN: Bob's pieces are..." << BobNum << endl;
 
     testSplitPieces(); 
