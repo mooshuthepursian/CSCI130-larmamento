@@ -42,12 +42,12 @@ int main(int argc, char* argv[]) {
 	cin.get();
 	return 0;
 }
-
+int sortedArray=0; 
 // crux of the program
 void program() {
     size_t size;
     cout << "This program finds statistical values of some integers entered by the user.\n";
-    cout << "How many nubers would like to enter? ";
+    cout << "How many numbers would like to enter? ";
     cin >> size;
     int *nums = new int[size]; //declare a dynamic int array of size 
     int max, min;
@@ -56,12 +56,13 @@ void program() {
     printArray(nums, size);//print the array to check if the values are there
     findMaxAndMin(nums, size, max, min);
     printf("Max = %u\n", max);
-    //FIXME2: print Min value
+    //FIXed: print Min value
 	printf("Min = %u\n", min);
     printf("Sum = %lld\n",findSum(nums, size));
     cout << "Sorted list in ascending order:\n";
     bubbleSort(nums, size);
-    //FIXME3: print sorted array
+    //FIXed: print sorted array
+    printArray(nums, size);
 
     delete [] nums;
 }
@@ -89,10 +90,17 @@ void findMaxAndMin(int nums[], int len, int &max, int &min)
 	max = nums[0]; //say, max is the first element
 	min = nums[0]; //say, min is the first element
 	for (int i = 0; i < len; i++) {
-		if (max < nums[i]) //compare max with each element and update max if necessary
+		if (max < nums[i]) 
+		{
+			//compare max with each element and update max if necessary
 			max = nums[i];
+		}
 
-		//FIXEME4: compare min with each element and update min
+		//FIXed: compare min with each element and update min
+		else if (min > nums[i]) 
+		{
+			min = nums[i];
+		}
 	}
 }
 
@@ -106,7 +114,10 @@ void bubbleSort(int nums[], int len)
 		for (j = 0; j < len-i-1; j++) {
 			// if two adjacent numbers are not in order, swap 'em
 			if (nums[j] > nums[j+1]) {
-				//FIXME5: swap the values of nums[j] and nums[j+1]
+				//FIXed: swap the values of nums[j] and nums[j+1]
+				temp = nums[j+1];
+				nums[j+1] = nums[j];
+				nums[j] = temp;
 				// can use built-in swap or implement your own swap
 				sorted = false;
 			}
@@ -118,6 +129,10 @@ void bubbleSort(int nums[], int len)
 big_int findSum(int nums[], int len)
 {
 	big_int sum = 0;
-	//FIXME6: iterate through nums array and add each element to sum
+	//FIXed: iterate through nums array and add each element to sum
+	for(int i = 0; i < len; i++)
+	{
+		sum += nums[i];
+	}
 	return sum;
 }
