@@ -96,6 +96,18 @@
 
 ## Labs
 
+### Lab #8
+
+| Name | Value |
+| :--- | :--- |
+| Name | 8 - Reading Numbers |
+| Description | Reading data numbers and listing them in ascending order, finding the max, the min, and sum, of the numbers|
+| Due Date | 09-May-2024 |
+| Status | complete |
+| Location | hhttps://github.com/mooshuthepursian/CSCI130-larmamento/blob/main/labs/L8/main.cpp |
+| Self Grade | 100/100 |
+| Notes | typed the given code stub; fixed all the fixmes |
+
 ### Lab #7
 
 | Name | Value |
