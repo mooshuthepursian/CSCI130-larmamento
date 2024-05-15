@@ -116,7 +116,41 @@ string initializeDisplayWord(const string& word)
 
 void game() 
 {
-    vector<string> words = readWordsFromFile("words.txt");
+    string difficulty;
+    cout << "****************************************************************************************" << endl;
+    cout << "How difficult do you want the game to be? Options: Easy, Medium, Hard, Impossible) " << endl;
+    cout << "****************************************************************************************" << endl;
+    cout << "Easy: consists of 3 letter words." << endl;
+    cout << "****************************************************************************************" << endl;
+    cout << "Medium: consists of 5 letter words." << endl;
+    cout << "****************************************************************************************" << endl;
+    cout << "Hard: consists of 7 letter words." << endl;
+    cout << "****************************************************************************************" << endl;
+    cout << "Impossible: consists of 10+ letter words." << endl;
+    cout << "****************************************************************************************" << endl;
+    cout << "Type the level you want (WARNING: CASE SENSITIVE):" << endl;
+    cin >> difficulty;
+
+    string filename;
+    if (difficulty == "Easy") 
+    {
+        filename = "easy.txt";
+    } 
+    else if (difficulty == "Medium") 
+    {
+        filename = "medium.txt";
+    } 
+    else if (difficulty == "Hard") 
+    {
+        filename = "hard.txt";
+    } 
+    else if (difficulty == "Impossible") 
+    {
+        filename = "impossible.txt";
+    } 
+
+    vector<string> words = readWordsFromFile(filename);
+
     string word = chooseWord(words);
     string displayWord = initializeDisplayWord(word);
     
@@ -179,43 +213,12 @@ int main()
     string fName;
     cout << "Hello! What is your name?" << endl;
     cin >> fName;
-    cout << "Hello, " << fName << ". Welcome to my hangman game. To play the game, players must guess letters to uncover a hidden word within a limited number of attempts, with each incorrect guess resulting in the drawing of a segment of a gallows until the word is guessed correctly or the gallows is completed." << endl;
-    string difficulty;
-    cout << "How difficult do you want the game to be? Options: Easy, Medium, Hard, Impossible) ";
-    cout << "Easy: consists of 3 letter words."
-    cout << "Medium: consists of 5 letter words."
-    cout << "Hard: consists of 7 letter words."
-    cout << "Impossible: consists of 10+ letter words."
-    cout << "Type the level you want:"
-    cin >> difficulty;
-
-    string filename;
-    if (difficulty == "Easy") 
-    {
-        filename = "easy.txt";
-    } 
-    else if (difficulty == "Medium") 
-    {
-        filename = "medium.txt";
-    } 
-    else if (difficulty == "Hard") 
-    {
-        filename = "hard.txt";
-    } 
-    else if (difficulty == "Impossible") 
-    {
-        filename = "impossible.txt";
-    } 
-    else 
-    {
-        cout << "Invalid difficulty level. Exiting...";
-        return 1;
-    }
-
-    vector<string> words = readWordsFromFile(filename);
-    // Proceed with the rest of your game logic...
-}
-
+    cout << "Hello, " << fName << ". Welcome to my hangman game!" << endl;
+    cout << "     To play the game, players must guess letters to uncover" << endl; 
+    cout << "     a hidden word within a limited number of attempts, with " << endl;
+    cout << "     each incorrect guess resulting in the drawing of a segment of a" << endl;
+    cout << "     gallows until the word is guessed correctly or the gallows is completed." << endl;
+    
     do 
     {
         game();

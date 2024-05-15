@@ -18,4 +18,3 @@ clock
 bread
 plant
 candy
-// chatgpt generated words

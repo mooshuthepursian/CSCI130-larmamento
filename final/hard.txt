@@ -18,5 +18,3 @@ husband
 lantern
 balloon
 problem
-
-//chat gpt generated words

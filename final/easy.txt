@@ -18,4 +18,3 @@ bus
 egg
 lip
 nut
-//chat gpt generated words 
