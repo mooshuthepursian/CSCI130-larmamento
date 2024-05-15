@@ -1,0 +1,21 @@
+apple
+chair
+snake
+table
+queen
+beach
+light
+tiger
+dress
+water
+house
+socks
+guitar
+mouse
+party
+sleep
+clock
+bread
+plant
+candy
+// chatgpt generated words

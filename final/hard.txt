@@ -1,0 +1,22 @@
+library
+chicken
+country
+weather
+freedom
+balloon
+journey
+kitchen
+airport
+failure
+monster
+warrior
+captain
+website
+diamond
+bicycle
+husband
+lantern
+balloon
+problem
+
+//chat gpt generated words

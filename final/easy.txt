@@ -1,0 +1,21 @@
+cat
+dog
+hat
+car
+box
+sun
+run
+pen
+cup
+bed
+top
+job
+bug
+fan
+rat
+leg
+bus
+egg
+lip
+nut
+//chat gpt generated words 
