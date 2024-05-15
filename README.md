@@ -12,6 +12,18 @@
 | **GitHub Username**         | mooshuthepursian |
 | **Repository**          | https://github.com/rambasnet/csci000-astudent |
 
+## FINAL PROJECT
+### FINAL PROJECT
+| Name | Value |
+| :--- | :--- |
+| Name | Hangman Game  |
+| Description | To play the game, players must guess letters to uncover a hidden word within a limited number of attempts, with each incorrect guess resulting in the drawing of a segment of a gallows until the word is guessed correctly or the gallows is completed.  |
+| Due Date | 15-May-2024 |
+| Status | Complete |
+| Location | https://github.com/mooshuthepursian/CSCI130-larmamento/blob/main/final/finalproject.cpp |
+| Self Grade | 100/100 |
+| Notes | Got a lot of help from TLC |
+
 ## Assignments
 ### Assignments #7
 | Name | Value |
