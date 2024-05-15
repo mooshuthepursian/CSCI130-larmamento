@@ -23,7 +23,7 @@ Steps:
 
 using namespace std;
 
-
+//referenced homework 1
 void displayHangman(int wrongGuesses) 
 {
     if (wrongGuesses == 0) 
