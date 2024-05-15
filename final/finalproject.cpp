@@ -113,7 +113,7 @@ string initializeDisplayWord(const string& word)
     return displayWord;
 }
 
-
+//references homework 5
 void game() 
 {
     string difficulty;
