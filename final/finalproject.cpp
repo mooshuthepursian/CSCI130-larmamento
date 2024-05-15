@@ -87,7 +87,7 @@ void displayHangman(int wrongGuesses)
         cout << "------" << endl;
     } 
 }
-vector<string> readWordsFromFile(const string& filename) //help from tlc center, stackoverflow, and chat gpt in understanding
+vector<string> readWordsFromFile(const string& filename) //help from tlc center, stackoverflow, and chat gpt in understanding https://stackoverflow.com/questions/14208069/how-to-read-output-of-a-vectorstring-with-a-certain-number-of-words-to-a-line
 {
     vector<string> words;
     ifstream inputFile(filename);
