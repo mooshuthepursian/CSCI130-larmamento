@@ -87,7 +87,7 @@ void displayHangman(int wrongGuesses)
         cout << "------" << endl;
     } 
 }
-vector<string> readWordsFromFile(const string& filename) //help from tlc center and chat gpt in understanding
+vector<string> readWordsFromFile(const string& filename) //help from tlc center, stackoverflow, and chat gpt in understanding
 {
     vector<string> words;
     ifstream inputFile(filename);
